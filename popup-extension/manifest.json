@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "pop-up extension",
+	"description": "popup extension",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": [ "<all_urls>" ],
+			"js": [ "content.js" ]
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "My Popup"
+	},
+	"web_accessible_resources": [
+		"assets/*.png",
+		"style/double-rainbow.css",
+		"script/double-rainbow.js",
+		"script/main.js",
+		"templates/*"
+	],
+	"background": {
+		"scripts": [ "background.js" ]
+	}
+}

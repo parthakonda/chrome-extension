@@ -7,5 +7,5 @@ function buttonClicked(e) {
 	console.log("Hey I'm clicked");
 }
 
-chrome.browserAction.setBadgeBackgroundColor({ color: [190, 190, 190, 230] });
+chrome.browserAction.setBadgeBackgroundColor({ color: 'orange' });
 chrome.browserAction.setBadgeText({ text: '12' });
