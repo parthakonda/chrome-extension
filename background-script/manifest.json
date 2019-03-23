@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "background script",
+	"description": "Understanding background script, which runs after the chrom launch",
+	"version": "0.1",
+	"background": {
+		"scripts": [ "background.js" ]
+	},
+	"web_accessible_resources": [
+		"assets/*.png",
+		"style/double-rainbow.css",
+		"script/double-rainbow.js",
+		"script/main.js",
+		"templates/*"
+	],
+	"browser_action": {
+		"default_icon": "assets/partha.png"
+	}
+}
